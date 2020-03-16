@@ -16,4 +16,9 @@
     <string name="pieces">4 Pieces</string>
     <string name="quantity">Quantity</string>
 
+    <string name="restaurant">Restaurant</string>
+    <string name="bar">Bar</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+
 </resources>
