@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_size">25sp</dimen>
+    <dimen name="sub_title_size">15sp</dimen>
+    <dimen name="dashboard_card_margin_right">10dp</dimen>
+    <dimen name="dashboard_card_size">130dp</dimen>
+    <dimen name="dashboard_icon_size">35dp</dimen>
+    <dimen name="dashboard_icon_padding">8dp</dimen>
+    <dimen name="dashboard_title_size">16sp</dimen>
+    <dimen name="dashboard_icon_title_margin">5dp</dimen>
+    <dimen name="group_heading_size">18sp</dimen>
+    <dimen name="group_margin">20dp</dimen>
+    <dimen name="group_icon_size">30dp</dimen>
+    <dimen name="group_title_size">15sp</dimen>
+
+    <dimen name="menu_icon_size">50dp</dimen>
+    <dimen name="small_menu_item_size">14sp</dimen>
+    <dimen name="main_menu_img_size">150dp</dimen>
+    <dimen name="main_main_rating_size">15dp</dimen>
+    <dimen name="main_menu_add_size">20dp</dimen>
+
+</resources>

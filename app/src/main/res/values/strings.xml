@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RestaurentApp</string>
+
+    <string name="title">Bar \nWelcomes you</string>
+
+    <!-- Launcher -->
+    <string name="launcher_title">Good Food, \nGood Mood</string>
+    <string name="sub_title">happy customer, happy life</string>
+    <string name="connect_with_facebook_google">Connect with facebook or google</string>
+    <string name="sign_in">Sign in</string>
+
+    <string name="food_menu">Food Menu</string>
+    <string name="search_dishes">Search for dishes</string>
+    <string name="bbq_chicken">BBQ Chicken</string>
+    <string name="description">Thin crust pizza topped with \nBBQ Chicken and fresh</string>
+    <string name="pieces">4 Pieces</string>
+    <string name="quantity">Quantity</string>
+
+</resources>
