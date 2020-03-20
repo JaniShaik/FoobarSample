@@ -20,5 +20,12 @@
     <string name="bar">Bar</string>
     <string name="facebook">Facebook</string>
     <string name="google">Google</string>
+    <string name="open_tab">Open Tab</string>
+
+    <string name="img_desc">No Image</string>
+    <string name="recent_check_in">Recent Check In’s</string>
+    <string name="place_device_against_the_tag">Place device \nagainst the Tag</string>
+    <string name="or">OR</string>
+    <string name="scan_qr_code">Scan QR Code</string>
 
 </resources>

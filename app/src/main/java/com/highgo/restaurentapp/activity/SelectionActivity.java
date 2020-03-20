@@ -28,13 +28,14 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
+        startActivity(new Intent(SelectionActivity.this,LoginActivity.class));
+        /*switch (v.getId()) {
             case R.id.btBar:
-                startActivity(new Intent(SelectionActivity.this,MainActivity.class));
+                startActivity(new Intent(SelectionActivity.this,LoginActivity.class));
                 break;
             case R.id.btRest:
                 startActivity(new Intent(SelectionActivity.this,LoginActivity.class));
                 break;
-        }
+        }*/
     }
 }
