@@ -1,6 +1,7 @@
 package com.highgo.restaurentapp.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -16,12 +17,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewOutlineProvider;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.highgo.restaurentapp.R;
+import com.highgo.restaurentapp.activity.DetailsActivity;
 
 public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.ViewHolder> {
 
@@ -48,6 +51,13 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.ViewHo
                 icons[position]);
         holder.menuIMG.setImageBitmap(getRoundedCornerImage(bitImg));
 
+        holder.llItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mContext.startActivity(new Intent(mContext, DetailsActivity.class));
+            }
+        });
+
     }
 
     @Override
@@ -58,13 +68,12 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.ViewHo
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView menuIMG;
+        LinearLayout llItem;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             menuIMG = itemView.findViewById(R.id.menuIMG);
-            //
-
-
+            llItem = itemView.findViewById(R.id.llItem);
         }
     }
 

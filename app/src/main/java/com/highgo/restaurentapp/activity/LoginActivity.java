@@ -10,8 +10,10 @@ import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
 import com.highgo.restaurentapp.R;
+import com.highgo.restaurentapp.fragment.RecentCheckInFragment;
+import com.highgo.restaurentapp.utils.Utils;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+public class LoginActivity extends BaseActivity implements View.OnClickListener {
 
     // Context
     private Context mContext = this;
@@ -19,11 +21,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_login);
-
+        Utils.changeStatusBarColor(getResources().getColor(R.color.white),this);
         RelativeLayout rlBar = findViewById(R.id.rlBar);
         rlBar.setOnClickListener(this);
 
@@ -33,8 +32,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     @Override
+    protected int containerId() {
+        return 0;
+    }
+
+    @Override
+    protected int getLayoutID() {
+        return R.layout.activity_login;
+    }
+
+    @Override
     public void onClick(View v) {
-        startActivity(new Intent(mContext,NfcActivity.class));
+        startActivity(new Intent(mContext, HomeActivity.class));
        /* switch (v.getId()) {
             case R.id.rlBar:
                 startActivity(new Intent(mContext,MainActivity.class));

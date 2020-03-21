@@ -10,5 +10,9 @@
     <color name="yellow">#f1b914</color>
 
     <color name="menu_bg">#131723</color>
+    <color name="search_boarder_color">#EFEFF4</color>
+    <color name="search_tex_color">#B8BBC6</color>
+    <color name="search_bg_color">#FAFAFB</color>
+
 
 </resources>

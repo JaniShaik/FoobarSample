@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_size_20"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/menuLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dashboard_card_size"
+                    android:layout_marginEnd="@dimen/dashboard_card_margin_right"
+                    android:layout_weight="1"
+                    android:background="@drawable/stroke_yellow_halfcurve">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_size_40"
+                            android:layout_height="@dimen/margin_size_40"
+                            android:background="@drawable/circular_black_drawable"
+                            android:contentDescription="@string/img_desc"
+                            android:padding="@dimen/dashboard_icon_padding"
+                            android:src="@drawable/ic_restaurant_menu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dashboard_icon_title_margin"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/menu"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_18" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ordersLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dashboard_card_size"
+                    android:layout_marginStart="@dimen/dashboard_card_margin_right"
+                    android:layout_weight="1"
+                    android:background="@drawable/stroke_yellow_halfcurve">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_size_40"
+                            android:layout_height="@dimen/margin_size_40"
+                            android:background="@drawable/circular_black_drawable"
+                            android:contentDescription="@string/img_desc"
+                            android:padding="@dimen/dashboard_icon_padding"
+                            android:src="@drawable/ic_mail" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dashboard_icon_title_margin"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/orders"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_18" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/dashboard_icon_title_margin"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="ETA: 25min"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dashboard_title_size"
+                        android:fontFamily="@font/montserrat_regular"  />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dashboard_card_size"
+                    android:layout_marginEnd="@dimen/dashboard_card_margin_right"
+                    android:layout_marginRight="@dimen/dashboard_card_margin_right"
+                    android:layout_weight="1"
+                    android:background="@drawable/stroke_yellow_halfcurve">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_size_40"
+                            android:layout_height="@dimen/margin_size_40"
+                            android:background="@drawable/circular_black_drawable"
+                            android:contentDescription="@string/img_desc"
+                            android:padding="@dimen/dashboard_icon_padding"
+                            android:src="@drawable/ic_mode_comment" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dashboard_icon_title_margin"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/contact"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_18" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dashboard_card_size"
+                    android:layout_marginStart="@dimen/dashboard_card_margin_right"
+                    android:layout_marginLeft="@dimen/dashboard_card_margin_right"
+                    android:layout_weight="1"
+                    android:background="@drawable/stroke_yellow_halfcurve">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_size_40"
+                            android:layout_height="@dimen/margin_size_40"
+                            android:contentDescription="@string/img_desc"
+                            android:src="@drawable/ic_account" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dashboard_icon_title_margin"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/close_tab"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_18" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="Due: $98"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dashboard_title_size"
+                        android:fontFamily="@font/montserrat_regular" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
+

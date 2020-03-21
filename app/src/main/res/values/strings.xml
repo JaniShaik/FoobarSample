@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">RestaurentApp</string>
 
-    <string name="title">Bar \nWelcomes you</string>
+    <string name="title">Bar Welcomes you</string>
 
     <!-- Launcher -->
     <string name="launcher_title">Good Food, \nGood Mood</string>
@@ -12,7 +12,7 @@
     <string name="food_menu">Food Menu</string>
     <string name="search_dishes">Search for dishes</string>
     <string name="bbq_chicken">BBQ Chicken</string>
-    <string name="description">Thin crust pizza topped with \nBBQ Chicken and fresh</string>
+    <string name="description">Fresh pan crust pizza topped with Chicken Pepperoni</string>
     <string name="pieces">4 Pieces</string>
     <string name="quantity">Quantity</string>
 
@@ -27,5 +27,17 @@
     <string name="place_device_against_the_tag">Place device \nagainst the Tag</string>
     <string name="or">OR</string>
     <string name="scan_qr_code">Scan QR Code</string>
+    <string name="exit_msg">Please click BACK again to exit</string>
+    <string name="menu">Menu</string>
+    <string name="orders">Orders</string>
+    <string name="contact">Contact</string>
+    <string name="close_tab">Close Tab</string>
+    <string name="add_to_order">Add to Order</string>
+    <string name="view">View</string>
+    <string name="my_order">My Order</string>
+    <string name="total">Total</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="order_ready">Your order will be ready in 15 mins</string>
+    <string name="taxes_charges">Taxes and Charges</string>
 
 </resources>

@@ -9,15 +9,18 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import com.highgo.restaurentapp.R;
+import com.highgo.restaurentapp.utils.Utils;
+
+import io.realm.internal.Util;
 
 public class SelectionActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_selection);
+
+        Utils.changeStatusBarColor(getResources().getColor(R.color.white),this);
 
         Button btBar = findViewById(R.id.btBar);
         btBar.setOnClickListener(this);

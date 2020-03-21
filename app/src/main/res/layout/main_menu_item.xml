@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="10dp"
+    android:id="@+id/llItem"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
@@ -14,6 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/relativeLayout"
+            android:layout_marginTop="-2dp"
             android:background="@drawable/stroke_black_halfcurve">
 
             <ImageView
@@ -21,6 +24,7 @@
                 android:layout_height="@dimen/main_menu_img_size"
                 android:id="@+id/menuIMG"
                 android:scaleType="fitXY"
+                android:contentDescription="@string/img_desc"
                 android:src="@drawable/chicken_salad_2" />
 
             <LinearLayout
@@ -37,7 +41,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4.3"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_bold"
                     android:textColor="@color/menu_bg"
                     android:textSize="12sp"
                     android:layout_marginLeft="5dp"
@@ -80,24 +84,27 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="BBQ Chicken"
+                    android:text="Chicken Pepperoni"
                     android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="@dimen/text_size_17" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="pizza"
                     android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="@dimen/text_size_13" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="$20"
+                    android:fontFamily="@font/montserrat_medium"
                     android:textColor="@color/white"
                     android:textSize="15sp"
-                    android:textStyle="bold" />
+                   />
             </LinearLayout>
 
             <RelativeLayout

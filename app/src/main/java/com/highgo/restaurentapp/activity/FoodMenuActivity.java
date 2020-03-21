@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import com.highgo.restaurentapp.R;
 import com.highgo.restaurentapp.adapter.MainMenuAdapter;
 import com.highgo.restaurentapp.adapter.SmallFoodMenuAdapter;
+import com.highgo.restaurentapp.utils.Utils;
 
 public class FoodMenuActivity extends AppCompatActivity {
 
@@ -26,14 +27,14 @@ public class FoodMenuActivity extends AppCompatActivity {
     // Data
     private String[] menuNames = {"Pizza", "Salad", "Pizza", "Salad", "Pizza", "Salad"};
     private int[] menuIcons = {R.drawable.pizza, R.drawable.salad, R.drawable.pizza, R.drawable.salad, R.drawable.pizza, R.drawable.salad};
-    private int[] mainMenuIcons = {R.drawable.chicken_salad_1, R.drawable.chicken_salad_2};
+    private int[] mainMenuIcons = {R.drawable.chicken_salad_1, R.drawable.chicken_salad_2,R.drawable.chicken_salad_1, R.drawable.chicken_salad_2};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_food_menu);
+        Utils.changeStatusBarColor(getResources().getColor(R.color.white),this);
         // Small Menu
         menuRV = findViewById(R.id.menuRV);
         // Setting adapter
