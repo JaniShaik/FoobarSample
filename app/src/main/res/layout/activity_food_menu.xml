@@ -50,6 +50,7 @@
                 android:drawableStart="@drawable/ic_search"
                 android:drawableLeft="@drawable/ic_search"
                 android:drawablePadding="5dp"
+                android:focusable="false"
                 android:hint="@string/search_dishes"
                 android:fontFamily="@font/montserrat_regular"
                 android:inputType="text"

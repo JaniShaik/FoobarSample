@@ -39,11 +39,12 @@
             android:id="@+id/rvList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="280dp" />
 
         <LinearLayout
+            android:id="@+id/llTax"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/margin_size_60"
             android:layout_above="@+id/ll_cart_view"
             android:background="@drawable/top_cornor_yellow_bg"
             android:elevation="@dimen/margin_size_5"
@@ -81,9 +82,9 @@
         <LinearLayout
             android:id="@+id/ll_cart_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/margin_size_220"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="-10dp"
+            android:layout_marginTop="-15dp"
             android:background="@drawable/top_corner_black_bg"
             android:elevation="@dimen/margin_size_5"
             android:orientation="vertical"
@@ -109,7 +110,6 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/margin_size_15"
                     android:gravity="center_vertical"
-                    android:layout_marginTop="@dimen/margin_size_5"
                     android:contentDescription="@string/img_desc"
                     android:fontFamily="@font/montserrat_regular"
                     android:text="@string/order_ready"
@@ -178,7 +178,7 @@
                         android:layout_centerVertical="true"
                         android:padding="10dp"
                         app:cardBackgroundColor="#EEA41C"
-                        app:cardCornerRadius="5dp">
+                        app:cardCornerRadius="@dimen/margin_size_10">
 
                         <ImageView
                             android:layout_width="wrap_content"

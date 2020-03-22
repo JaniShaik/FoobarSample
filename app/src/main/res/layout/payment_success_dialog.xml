@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_size_30"
             android:layout_marginBottom="@dimen/margin_size_20"
-            android:fontFamily="@font/montserrat_regular"
+            android:fontFamily="@font/montserrat_medium"
             android:gravity="center"
             android:text="@string/payment_successful"
             android:textColor="@color/black"

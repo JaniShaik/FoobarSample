@@ -14,7 +14,7 @@
         android:orientation="vertical"
         android:elevation="@dimen/margin_size_2"
         app:cardBackgroundColor="@color/yellow"
-        app:cardCornerRadius="@dimen/margin_size_10">
+        app:cardCornerRadius="@dimen/margin_size_14">
 
         <ImageView
             android:id="@+id/iconIMG"
