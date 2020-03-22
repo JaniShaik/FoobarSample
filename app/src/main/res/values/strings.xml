@@ -39,5 +39,26 @@
     <string name="confirm_order">Confirm Order</string>
     <string name="order_ready">Your order will be ready in 15 mins</string>
     <string name="taxes_charges">Taxes and Charges</string>
+    <string name="your_order_is_successfully_placed">Your order is successfully \nplaced.</string>
+    <string name="your_order_is_successfully_updated">Your order is successfully \nUpdated.</string>
+    <string name="your_can_track">You can track the order in the \n"Orders" section.</string>
+    <string name="text_continue">Continue</string>
+    <string name="go_to_orders">Go to orders</string>
+    <string name="edit_order">Edit Order</string>
+    <string name="show_code">Show Code</string>
+    <string name="close">Close</string>
+    <string name="add_a_tip">Add a tip</string>
+    <string name="item_total">Item Total</string>
+    <string name="tip_for_server">Tip for server</string>
+    <string name="total_with_dots">Total:</string>
+    <string name="proceed_to_payment">Proceed to Payment</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="tab_closed_msg">Your Tab is closed. You will be redirected to Home.</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_number">Order Number</string>
+    <string name="payment">Payment</string>
+    <string name="date">Date</string>
+    <string name="order_summary">Order Summary</string>
+
 
 </resources>

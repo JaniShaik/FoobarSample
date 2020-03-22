@@ -49,6 +49,15 @@ public class DashBoardFragment extends BaseFragment<FragmentDashBoardBinding, Da
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), OrderActivity.class);
+                intent.putExtra("type", "Order");
+                startActivity(intent);
+            }
+        });
+        getBinding().closeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), OrderActivity.class);
+                intent.putExtra("type", "Close");
                 startActivity(intent);
             }
         });

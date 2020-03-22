@@ -13,6 +13,7 @@
     <color name="search_boarder_color">#EFEFF4</color>
     <color name="search_tex_color">#B8BBC6</color>
     <color name="search_bg_color">#FAFAFB</color>
+    <color name="dark_gray">#707070</color>
 
 
 </resources>

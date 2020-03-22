@@ -7,74 +7,51 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.highgo.restaurentapp.R;
 import com.highgo.restaurentapp.adapter.OrderAdapter;
-import com.highgo.restaurentapp.fragment.DashBoardFragment;
+import com.highgo.restaurentapp.adapter.TipAdapter;
 import com.highgo.restaurentapp.utils.Utils;
 
 import java.util.Objects;
 
-public class OrderActivity extends BaseActivity {
-
-    @Override
-    protected int containerId() {
-        return 0;
-    }
-
-    @Override
-    protected int getLayoutID() {
-        return R.layout.activity_order;
-    }
-
-    private Button btCode;
-    private String type = "";
+public class BillDetailsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_order);
-        Utils.changeStatusBarColor(getResources().getColor(R.color.white), this);
+        setContentView(R.layout.activity_bill_details);
+        Utils.changeStatusBarColor(getResources().getColor(R.color.white),this);
+
         RecyclerView rvList = findViewById(R.id.rvList);
         OrderAdapter orderAdapter = new OrderAdapter(this);
         rvList.setAdapter(orderAdapter);
         rvList.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
 
-        btCode = findViewById(R.id.btCode);
+        RecyclerView rvTipList = findViewById(R.id.rvTipList);
+        TipAdapter tipAdapter = new TipAdapter(this);
+        rvTipList.setAdapter(tipAdapter);
+        rvTipList.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
-        if (getIntent().hasExtra("type")) {
-            type = getIntent().getStringExtra("type");
-        }
-
-        if (type.equals("Order")) {
-            btCode.setText(getString(R.string.show_code));
-        } else if (type.equals("Close")) {
-            btCode.setText(getString(R.string.close_tab));
-        }
-        btCode.setOnClickListener(new View.OnClickListener() {
+        CardView cardPay=findViewById(R.id.cardPay);
+        cardPay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (btCode.getText().toString().equals(getString(R.string.close_tab))) {
-                    startActivity(new Intent(OrderActivity.this, BillDetailsActivity.class));
-                } else {
-                    showOrderDialog();
-                }
-
+                showOrderDialog();
             }
         });
+
     }
 
     private void showOrderDialog() {
-        final AlertDialog dialog = new AlertDialog.Builder(OrderActivity.this).create();
+        final AlertDialog dialog = new AlertDialog.Builder(BillDetailsActivity.this).create();
         LayoutInflater layoutInflater = getLayoutInflater();
-        @SuppressLint("InflateParams") View view = layoutInflater.inflate(R.layout.show_code_dialog, null);
+        @SuppressLint("InflateParams") View view = layoutInflater.inflate(R.layout.payment_success_dialog, null);
         Objects.requireNonNull(dialog.getWindow()).setBackgroundDrawableResource(android.R.color.transparent);
         dialog.setView(view);
         dialog.setCancelable(false);
@@ -82,8 +59,9 @@ public class OrderActivity extends BaseActivity {
         btContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btCode.setText(getString(R.string.close_tab));
                 dialog.dismiss();
+                Intent intent=new Intent(BillDetailsActivity.this,OrderSummaryActivity.class);
+                startActivity(intent);
             }
         });
         dialog.show();

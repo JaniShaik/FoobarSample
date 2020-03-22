@@ -12,6 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.OrderSummaryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".activity.BillDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.EditOrderActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.OrderActivity"
             android:theme="@style/AppTheme.NoActionBar" />

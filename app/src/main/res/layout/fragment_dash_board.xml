@@ -170,6 +170,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/closeLayout"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/dashboard_card_size"
                     android:layout_marginStart="@dimen/dashboard_card_margin_right"

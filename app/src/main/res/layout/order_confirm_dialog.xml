@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:elevation="@dimen/margin_size_5"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="2dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_size_20">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_20"
+            android:contentDescription="@string/img_desc"
+            android:src="@drawable/img_pizza" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_30"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/your_order_is_successfully_placed"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_10"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_20" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_20"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/your_can_track"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_13" />
+
+        <Button
+            android:id="@+id/btContinue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_size_70"
+            android:layout_marginStart="@dimen/margin_size_10"
+            android:layout_marginTop="@dimen/margin_size_20"
+            android:layout_marginEnd="@dimen/margin_size_10"
+            android:background="@drawable/bg_yellow"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/text_continue"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/go_to_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_10"
+            android:layout_marginBottom="@dimen/margin_size_10"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:padding="@dimen/margin_size_10"
+            android:text="@string/go_to_orders"
+            android:textColor="@color/search_tex_color"
+            android:textSize="@dimen/text_size_14" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
