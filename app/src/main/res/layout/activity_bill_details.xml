@@ -222,7 +222,7 @@
                         android:layout_centerVertical="true"
                         android:padding="10dp"
                         app:cardBackgroundColor="#EEA41C"
-                        app:cardCornerRadius="5dp">
+                        app:cardCornerRadius="@dimen/margin_size_10">
 
                         <ImageView
                             android:layout_width="wrap_content"
