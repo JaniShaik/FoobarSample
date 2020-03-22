@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_size_20"
             android:contentDescription="@string/img_desc"
-            android:src="@drawable/img_pizza" />
+            android:src="@mipmap/ic_check" />
 
         <TextView
             android:layout_width="match_parent"

@@ -59,6 +59,7 @@
     <string name="payment">Payment</string>
     <string name="date">Date</string>
     <string name="order_summary">Order Summary</string>
+    <string name="bill_details">Bill Details</string>
 
 
 </resources>

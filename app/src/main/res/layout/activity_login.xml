@@ -3,17 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_bg"
+    android:background="@drawable/bg"
     tools:context=".activity.LoginActivity">
 
     <ImageView
-        android:layout_above="@+id/mainTitle"
-        android:contentDescription="@string/img_desc"
         android:layout_width="@dimen/margin_size_150"
-        android:src="@mipmap/ic_fb"
+        android:layout_height="@dimen/margin_size_150"
+        android:layout_above="@+id/mainTitle"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/margin_size_20"
-        android:layout_height="@dimen/margin_size_150"/>
+        android:contentDescription="@string/img_desc"
+        android:src="@mipmap/ic_fb"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/mainTitle"
@@ -21,9 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_marginStart="@dimen/margin_size_20"
+        android:layout_marginTop="@dimen/margin_size_20"
         android:fontFamily="@font/montserrat_black"
         android:text="@string/launcher_title"
-        android:layout_marginTop="@dimen/margin_size_20"
         android:textColor="@color/white"
         android:textSize="@dimen/text_size_40" />
 
@@ -85,7 +86,7 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="@dimen/text_size_15"
             android:contentDescription="@string/img_desc"
-            android:src="@mipmap/ic_fb" />
+            android:src="@mipmap/ic_google" />
 
         <TextView
             android:layout_width="wrap_content"

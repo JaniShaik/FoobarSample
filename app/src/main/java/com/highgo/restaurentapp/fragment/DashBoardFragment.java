@@ -7,7 +7,6 @@ import android.view.View;
 import androidx.annotation.Nullable;
 
 import com.highgo.restaurentapp.R;
-import com.highgo.restaurentapp.activity.DetailsActivity;
 import com.highgo.restaurentapp.activity.FoodMenuActivity;
 import com.highgo.restaurentapp.activity.OrderActivity;
 import com.highgo.restaurentapp.databinding.FragmentDashBoardBinding;

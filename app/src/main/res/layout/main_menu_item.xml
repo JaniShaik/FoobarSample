@@ -114,11 +114,11 @@
                 android:gravity="center_horizontal">
 
                 <ImageView
-                    android:layout_width="@dimen/main_menu_add_size"
-                    android:layout_height="@dimen/main_menu_add_size"
+                    android:layout_width="@dimen/margin_size_30"
+                    android:layout_height="@dimen/margin_size_30"
                     android:layout_alignParentBottom="true"
                     android:layout_marginBottom="10dp"
-                    android:src="@drawable/ic_add" />
+                    android:src="@mipmap/ic_circle_add" />
             </RelativeLayout>
         </LinearLayout>
     </RelativeLayout>

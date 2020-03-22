@@ -26,9 +26,7 @@
         <activity
             android:name=".activity.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".activity.NfcActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".fragment.RecentCheckInFragment"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -41,9 +39,7 @@
         <activity
             android:name=".activity.FoodMenuActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".activity.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".activity.SelectionActivity"
             android:theme="@style/AppTheme.NoActionBar">

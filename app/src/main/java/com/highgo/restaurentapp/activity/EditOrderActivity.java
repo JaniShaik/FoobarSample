@@ -2,6 +2,7 @@ package com.highgo.restaurentapp.activity;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -61,7 +62,7 @@ public class EditOrderActivity extends BaseActivity {
         btContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                replaceFragment(DashBoardFragment.class,"DashBoard",null);
+                startActivity(new Intent(EditOrderActivity.this,HomeActivity.class));
                 dialog.dismiss();
             }
         });

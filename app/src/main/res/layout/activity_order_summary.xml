@@ -25,7 +25,7 @@
             android:layout_marginStart="@dimen/margin_size_20"
             android:fontFamily="@font/montserrat_medium"
             android:gravity="center_vertical"
-            android:text="@string/my_order"
+            android:text="@string/order_summary"
             android:textColor="@color/black"
             android:textSize="@dimen/text_size_18" />
     </LinearLayout>

@@ -37,7 +37,8 @@ public class DetailsActivity extends BaseActivity {
         tvView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showOrderDialog();
+               // showOrderDialog();
+                startActivity(new Intent(DetailsActivity.this,EditOrderActivity.class));
             }
         });
     }
