@@ -12,10 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.OrderSummaryActivity"
+        <activity
+            android:name=".activity.NfcActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity android:name=".activity.BillDetailsActivity"
+        <activity
+            android:name=".activity.RecentCheckInActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.OrderSummaryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.BillDetailsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.EditOrderActivity"
@@ -26,7 +33,6 @@
         <activity
             android:name=".activity.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".fragment.RecentCheckInFragment"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -39,9 +45,8 @@
         <activity
             android:name=".activity.FoodMenuActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
-            android:name=".activity.SelectionActivity"
+            android:name=".activity.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

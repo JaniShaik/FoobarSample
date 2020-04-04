@@ -43,7 +43,7 @@
             <LinearLayout
                 android:id="@+id/llOpen"
                 android:layout_width="match_parent"
-                android:layout_height="225dp"
+                android:layout_height="200dp"
                 android:layout_marginStart="@dimen/margin_size_20"
                 android:layout_marginTop="@dimen/margin_size_20"
                 android:layout_marginEnd="@dimen/margin_size_20"

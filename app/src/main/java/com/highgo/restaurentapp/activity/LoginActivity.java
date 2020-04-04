@@ -50,7 +50,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     }
 
     private void goToNext(String type) {
-        Intent intent = new Intent(mContext, HomeActivity.class);
+        Intent intent = new Intent(mContext, RecentCheckInActivity.class);
         intent.putExtra("type", type);
         startActivity(intent);
     }

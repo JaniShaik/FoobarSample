@@ -14,12 +14,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.highgo.restaurentapp.R;
 
+import java.util.ArrayList;
+
 public class TipAdapter extends RecyclerView.Adapter<TipAdapter.ViewHolder> {
 
     private Context mContext;
+    private ArrayList<String> list;
 
-    public TipAdapter(Context mContext) {
+    public TipAdapter(Context mContext,ArrayList<String> list) {
         this.mContext = mContext;
+        this.list = list;
     }
 
     @NonNull
@@ -37,22 +41,24 @@ public class TipAdapter extends RecyclerView.Adapter<TipAdapter.ViewHolder> {
         } else {
             holder.cardView.setCardBackgroundColor(ContextCompat.getColor(mContext, R.color.search_boarder_color));
         }
+        holder.tvTip.setText(list.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return 5;
+        return list.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView menuTV;
+        TextView tvTip;
         ImageView iconIMG;
         CardView cardView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             cardView=itemView.findViewById(R.id.cardView);
+            tvTip=itemView.findViewById(R.id.tvTip);
         }
     }
 }

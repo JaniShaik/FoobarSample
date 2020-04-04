@@ -3,7 +3,6 @@ package com.highgo.restaurentapp.activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
-import android.view.WindowManager;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -31,7 +30,7 @@ public class HomeActivity extends BaseActivity {
             item.setChecked(true);
             switch (item.getItemId()) {
                 case R.id.navigation_dashboard:
-                    replaceFragment(RecentCheckInFragment.class, "DashBoard", null);
+                    replaceFragment(DashBoardFragment.class, "DashBoard", null);
                     return true;
                 case R.id.navigation_notification:
                     replaceFragment(AlertsFragment.class, "Alerts", null);
@@ -51,7 +50,7 @@ public class HomeActivity extends BaseActivity {
         Utils.changeStatusBarColor(getResources().getColor(R.color.white),this);
         navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        replaceFragment(RecentCheckInFragment.class, "RecentCheckIn", null);
+        replaceFragment(DashBoardFragment.class, "Dashboard", null);
     }
 
     @Override
@@ -67,7 +66,7 @@ public class HomeActivity extends BaseActivity {
     @Override
     public void onBackPressed() {
         Fragment fragment = getCurrentFragmentByTag(R.id.frame_container);
-        if (fragment instanceof RecentCheckInFragment) {
+        if (fragment instanceof DashBoardFragment) {
             doublePressToFinish();
         } else {
             getSupportFragmentManager().popBackStack();
@@ -102,9 +101,7 @@ public class HomeActivity extends BaseActivity {
             @Override
             public void onBackStackChanged() {
                 Fragment fragment1 = getCurrentFragmentByTag(R.id.frame_container);
-                if (fragment1 instanceof RecentCheckInFragment) {
-                    navigation.getMenu().getItem(0).setChecked(true);
-                } else if (fragment1 instanceof DashBoardFragment) {
+                 if (fragment1 instanceof DashBoardFragment) {
                     navigation.getMenu().getItem(0).setChecked(true);
                 } else if (fragment1 instanceof AlertsFragment) {
                     navigation.getMenu().getItem(1).setChecked(true);

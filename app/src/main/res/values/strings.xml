@@ -38,7 +38,7 @@
     <string name="total">Total</string>
     <string name="confirm_order">Confirm Order</string>
     <string name="order_ready">Your order will be ready in 15 mins</string>
-    <string name="taxes_charges">Taxes and Charges</string>
+    <string name="taxes_charges">Taxes</string>
     <string name="your_order_is_successfully_placed">Your order is successfully \nplaced.</string>
     <string name="your_order_is_successfully_updated">Your order is successfully \nUpdated.</string>
     <string name="your_can_track">You can track the order in the \n"Orders" section.</string>
@@ -53,13 +53,15 @@
     <string name="total_with_dots">Total:</string>
     <string name="proceed_to_payment">Proceed to Payment</string>
     <string name="payment_successful">Payment Successful</string>
-    <string name="tab_closed_msg">Your Tab is closed. You will be redirected to Home.</string>
+    <string name="tab_closed_msg">Your tab is now Closed</string>
     <string name="order_details">Order Details</string>
     <string name="order_number">Order Number</string>
     <string name="payment">Payment</string>
     <string name="date">Date</string>
-    <string name="order_summary">Order Summary</string>
+    <string name="order_summary">Go To Home</string>
     <string name="bill_details">Bill Details</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="add_more">Add More</string>
 
 
 </resources>
