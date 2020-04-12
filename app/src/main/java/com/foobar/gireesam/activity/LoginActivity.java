@@ -142,7 +142,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     }
 
     private void goToNext(String type) {
-        Intent intent = new Intent(mContext, HomeActivity.class);
+        // Intent intent = new Intent(mContext, HomeActivity.class);
+        Intent intent = new Intent(mContext, RecentCheckInActivity.class);
         intent.putExtra("type", type);
         startActivity(intent);
     }
@@ -172,8 +173,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
             Toast.makeText(mContext, "Signed in successfully..!", Toast.LENGTH_SHORT).show();
             goToNext("Restaurant");
         } catch (ApiException e) {
-            Log.e(TAG, e.getMessage());
-            Log.e(TAG, String.valueOf(e.getStatusCode()));
             Toast.makeText(mContext, e.getMessage(), Toast.LENGTH_SHORT).show();
             firebaseGoogleAuth(null);
             Toast.makeText(mContext, "Sign in failed..!", Toast.LENGTH_SHORT).show();
@@ -240,26 +239,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                 Log.d(TAG, "Error " + error);
             }
         });
-
-        /*LoginManager.getInstance().registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-                Log.d(TAG, "User ID: " +
-                        loginResult.getAccessToken().getUserId() + "\n" +
-                        "Auth Token: " + loginResult.getAccessToken().getToken());
-                handleFirebaseToken(loginResult.getAccessToken());
-            }
-
-            @Override
-            public void onCancel() {
-                Log.d(TAG, "Cancel");
-            }
-
-            @Override
-            public void onError(FacebookException error) {
-                Log.d(TAG, "Error " + error);
-            }
-        });*/
     }
 
     private void handleFirebaseToken(AccessToken token) {

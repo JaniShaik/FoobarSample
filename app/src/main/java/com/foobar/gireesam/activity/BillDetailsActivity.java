@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -24,6 +25,7 @@ import java.util.Objects;
 
 public class BillDetailsActivity extends AppCompatActivity {
 
+    private Context mContext = this;
     private final static int TIME_OUT = 3000;
     private AlertDialog dialog;
     private Handler handler;
@@ -47,7 +49,7 @@ public class BillDetailsActivity extends AppCompatActivity {
         list.add("+ 15 %");
         list.add("+ 20 %");
         list.add("+ 25 %");
-        list.add("+ 30 %");
+        list.add("+ Other ");
 
         TipAdapter tipAdapter = new TipAdapter(this,list);
         rvTipList.setAdapter(tipAdapter);
@@ -57,47 +59,9 @@ public class BillDetailsActivity extends AppCompatActivity {
         cardPay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showOrderDialog();
-                startTimer();
+                startActivity(new Intent(mContext, PaymentMethodActivity.class));
             }
         });
 
-    }
-
-    private void startTimer() {
-        handler = new Handler();
-        runnable = new Runnable() {
-            @Override
-            public void run() {
-                /*if (dialog != null) {
-                    dialog.dismiss();
-                }*/
-                Intent intent = new Intent(BillDetailsActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
-        };
-        handler.postDelayed(runnable, TIME_OUT);
-    }
-
-    private void showOrderDialog() {
-        dialog = new AlertDialog.Builder(BillDetailsActivity.this).create();
-        LayoutInflater layoutInflater = getLayoutInflater();
-        @SuppressLint("InflateParams") View view = layoutInflater.inflate(R.layout.payment_success_dialog, null);
-        Objects.requireNonNull(dialog.getWindow()).setBackgroundDrawableResource(android.R.color.transparent);
-        dialog.setView(view);
-        dialog.setCancelable(false);
-        Button btContinue = view.findViewById(R.id.btContinue);
-        btContinue.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-                if (handler != null) {
-                    handler.removeCallbacks(runnable);
-                }
-                Intent intent = new Intent(BillDetailsActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
-        });
-        dialog.show();
     }
 }

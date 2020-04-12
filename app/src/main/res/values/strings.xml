@@ -39,6 +39,8 @@
     <string name="add_to_order">Add to Order</string>
     <string name="view">View</string>
     <string name="my_order">My Order</string>
+    <string name="checkout">Checkout</string>
+    <string name="payment_method">PAYMENT METHOD</string>
     <string name="total">Total</string>
     <string name="confirm_order">Confirm Order</string>
     <string name="order_ready">Your order will be ready in 15 mins</string>
@@ -66,6 +68,7 @@
     <string name="bill_details">Bill Details</string>
     <string name="sub_total">Sub Total</string>
     <string name="add_more">Add More</string>
-
+    <string name="touch_id">Pay with Touch ID</string>
+    <string name="card_number">**** **** **** 5967</string>
 
 </resources>

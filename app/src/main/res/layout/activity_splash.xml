@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
-=======
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> a821d63e4d3c96a6e632e1411f8a46b25fb0453e
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     android:src="@drawable/foobar_splash"
     android:scaleType="fitXY"
     android:contentDescription="@string/img_desc"
     tools:context=".activity.SplashActivity">
 
 </ImageView>
-=======
-    tools:context=".activity.SplashActivity">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:gravity="center"
-        android:text="Splash" />
-
-</LinearLayout>
->>>>>>> a821d63e4d3c96a6e632e1411f8a46b25fb0453e
