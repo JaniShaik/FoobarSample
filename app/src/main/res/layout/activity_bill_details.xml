@@ -72,7 +72,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_size_15"
+                android:layout_marginTop="@dimen/margin_size_10"
                 android:orientation="horizontal">
 
                 <TextView
@@ -80,10 +80,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:contentDescription="@string/img_desc"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="@string/item_total"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/sub_total"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/text_size_14" />
+                    android:textSize="@dimen/text_size_12" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -91,10 +91,10 @@
                     android:layout_gravity="end"
                     android:layout_marginEnd="@dimen/margin_size_20"
                     android:contentDescription="@string/img_desc"
-                    android:fontFamily="@font/montserrat_regular"
+                    android:fontFamily="@font/montserrat_bold"
                     android:text="$28"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/text_size_14" />
+                    android:textSize="@dimen/text_size_12" />
 
             </LinearLayout>
 

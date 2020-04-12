@@ -73,6 +73,7 @@
                     android:orientation="vertical">
 
                     <TextView
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -90,6 +91,7 @@
                         android:weightSum="3">
 
                         <ImageView
+                            android:id="@+id/ivMinus"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -98,6 +100,7 @@
                             android:src="@drawable/ic_remove_black" />
 
                         <TextView
+                            android:id="@+id/tvQty"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -108,6 +111,7 @@
                             android:textSize="@dimen/text_size_15" />
 
                         <ImageView
+                            android:id="@+id/ivPlus"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -197,6 +201,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tv_total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_size_5"
@@ -220,17 +225,40 @@
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tvView"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="@dimen/margin_size_20"
-            android:contentDescription="@string/img_desc"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/view"
-            android:textColor="@color/white"
-            android:textSize="@dimen/text_size_14" />
+            android:layout_marginStart="@dimen/margin_size_20"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:layout_marginTop="@dimen/margin_size_5"
+                android:layout_marginEnd="@dimen/margin_size_20"
+                android:contentDescription="@string/img_desc"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/view"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tvMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:layout_marginTop="@dimen/margin_size_5"
+                android:layout_marginEnd="@dimen/margin_size_20"
+                android:contentDescription="@string/img_desc"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/add_more"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/text_size_18" />
+
+        </LinearLayout>
 
 
     </LinearLayout>
