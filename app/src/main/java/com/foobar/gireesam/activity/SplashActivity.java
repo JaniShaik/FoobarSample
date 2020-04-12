@@ -1,4 +1,4 @@
-package com.highgo.restaurentapp.activity;
+package com.foobar.gireesam.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.highgo.restaurentapp.R;
+import com.foobar.gireesam.R;
 
 public class SplashActivity extends AppCompatActivity {
 

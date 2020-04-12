@@ -1,4 +1,4 @@
-package com.highgo.restaurentapp.activity;
+package com.foobar.gireesam.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,9 +8,10 @@ import android.widget.RelativeLayout;
 
 import androidx.annotation.Nullable;
 
+import com.foobar.gireesam.R;
 import com.foobar.gireesam.activity.BaseActivity;
 import com.foobar.gireesam.activity.HomeActivity;
-import com.highgo.restaurentapp.R;
+
 
 
 public class NfcActivity extends BaseActivity {

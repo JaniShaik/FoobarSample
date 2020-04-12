@@ -1,4 +1,4 @@
-package com.highgo.restaurentapp.activity;
+package com.foobar.gireesam.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,9 +10,9 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.highgo.restaurentapp.R;
-import com.highgo.restaurentapp.adapter.RecentCheckInAdapter;
-import com.highgo.restaurentapp.fragment.NfcFragment;
+import com.foobar.gireesam.R;
+import com.foobar.gireesam.adapter.RecentCheckInAdapter;
+import com.foobar.gireesam.fragment.NfcFragment;
 
 public class RecentCheckInActivity extends BaseActivity {
     private Context mContext;

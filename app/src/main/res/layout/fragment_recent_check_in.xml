@@ -43,11 +43,7 @@
             <LinearLayout
                 android:id="@+id/llOpen"
                 android:layout_width="match_parent"
-<<<<<<< HEAD
                 android:layout_height="150dp"
-=======
-                android:layout_height="200dp"
->>>>>>> a821d63e4d3c96a6e632e1411f8a46b25fb0453e
                 android:layout_marginStart="@dimen/margin_size_20"
                 android:layout_marginTop="@dimen/margin_size_20"
                 android:layout_marginEnd="@dimen/margin_size_20"
