@@ -42,10 +42,10 @@
 
 
     <RelativeLayout
-        android:id="@+id/rlRest"
+        android:id="@+id/rlFb"
         android:layout_width="match_parent"
         android:layout_height="@dimen/margin_size_55"
-        android:layout_above="@+id/rlBar"
+        android:layout_above="@+id/rlGoogle"
         android:layout_margin="@dimen/margin_size_20"
         android:background="@drawable/bg_white">
 
@@ -71,7 +71,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/rlBar"
+        android:id="@+id/rlGoogle"
         android:layout_width="match_parent"
         android:layout_height="@dimen/margin_size_55"
         android:layout_alignParentBottom="true"

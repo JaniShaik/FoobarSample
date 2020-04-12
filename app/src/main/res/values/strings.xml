@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">RestaurentApp</string>
+    <string name="app_name">FooBar</string>
+    <!-- Facebook Id -->
+    <string name="facebook_app_id">647257516114928</string>
+    <string name="fb_login_protocol_scheme">fb647257516114928</string>
+
 
     <string name="title">Bar Welcomes you</string>
 
