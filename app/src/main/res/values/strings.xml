@@ -70,5 +70,18 @@
     <string name="add_more">Add More</string>
     <string name="touch_id">Pay with Touch ID</string>
     <string name="card_number">**** **** **** 5967</string>
+    <!-- Notifications -->
+    <string name="notifications">Notifications</string>
+    <string name="notification_one">Your drink is ready. Pickup at counter by showing code.</string>
+    <string name="notification_two">Your tab is closed due to inactivity for long time or away from restaurant location.</string>
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="settings_name">John Doe</string>
+    <string name="settings_location">San Francisco, CA</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_general">General</string>
+    <string name="settings_account">Account</string>
+    <string name="settings_help">Help</string>
+
 
 </resources>

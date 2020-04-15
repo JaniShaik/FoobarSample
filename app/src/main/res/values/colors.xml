@@ -15,5 +15,6 @@
     <color name="search_bg_color">#FAFAFB</color>
     <color name="dark_gray">#707070</color>
 
+    <color name="notification">#FFEBAE</color>
 
 </resources>

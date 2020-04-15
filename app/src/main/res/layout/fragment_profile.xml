@@ -1,18 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/mainTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginStart="@dimen/margin_size_20"
         android:fontFamily="@font/montserrat_black"
-        android:text="profile"
+        android:text="@string/settings"
         android:layout_marginTop="@dimen/margin_size_20"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_40" />
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_30" />
+
+    <ImageView
+        android:layout_width="@dimen/margin_size_150"
+        android:layout_height="@dimen/margin_size_150"
+        android:id="@+id/profileIMG"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_size_20"
+        android:contentDescription="@string/img_desc"
+        android:src="@drawable/profile"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_size_20"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="@dimen/margin_size_5"
+            android:layout_weight="0.8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameTV"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:fontFamily="@font/montserrat_black"
+                android:text="@string/settings_name"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_16"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/locationTV"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:text="@string/settings_location"
+                android:textSize="@dimen/text_size_14"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_yellow_small"
+            android:src="@drawable/ic_edit"
+            android:layout_weight="0.2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/margin_size_20"
+        android:layout_marginBottom="@dimen/margin_size_15">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_notifications_black"
+            android:contentDescription="@string/img_desc"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notificationTV"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_size_20"
+            android:text="@string/settings_notifications"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_16"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/margin_size_20"
+        android:layout_marginBottom="@dimen/margin_size_15">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_settings_black"
+            android:contentDescription="@string/img_desc"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/generalTV"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_size_20"
+            android:text="@string/settings_general"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_16"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/margin_size_20"
+        android:layout_marginBottom="@dimen/margin_size_15">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_person_black"
+            android:contentDescription="@string/img_desc"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/accountTV"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_size_20"
+            android:text="@string/settings_account"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_16"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/margin_size_20"
+        android:layout_marginBottom="@dimen/margin_size_15">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_help_black"
+            android:contentDescription="@string/img_desc"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/helpTV"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_size_20"
+            android:text="@string/settings_help"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_16"/>
+
+    </LinearLayout>
 
 </LinearLayout>
